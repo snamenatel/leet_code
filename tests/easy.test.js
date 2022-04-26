@@ -1,4 +1,5 @@
 import { hammingWeight } from "./../src/easy/numberOf1Bits";
+import { subtractProductAndSum } from "./../src/easy/subtractProductAndSum";
 
 // const cases = [
 //   {
@@ -25,5 +26,26 @@ const hammingWeightCases = [
 hammingWeightCases.forEach(({ arg, exp }) => {
   test(`${arg.toString()} expect ${exp.toString()}`, () => {
     expect(hammingWeight(...arg)).toBe(exp);
+  });
+});
+
+const subtractProductAndSumCases = [
+  {
+    arg: [234],
+    exp: 15
+  },
+  {
+    arg: [4421],
+    exp: 21
+  },
+  {
+    arg: [234],
+    exp: 15
+  }
+];
+
+subtractProductAndSumCases.forEach(({ arg, exp }) => {
+  test(`${arg.toString()} expect ${exp.toString()}`, () => {
+    expect(subtractProductAndSum(...arg)).toBe(exp);
   });
 });

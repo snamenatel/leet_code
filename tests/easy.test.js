@@ -1,5 +1,6 @@
 import { hammingWeight } from "./../src/easy/numberOf1Bits";
 import { subtractProductAndSum } from "./../src/easy/subtractProductAndSum";
+import { isAlienSorted } from "./../src/easy/isAlienSorted";
 
 // const cases = [
 //   {
@@ -47,5 +48,30 @@ const subtractProductAndSumCases = [
 subtractProductAndSumCases.forEach(({ arg, exp }) => {
   test(`${arg.toString()} expect ${exp.toString()}`, () => {
     expect(subtractProductAndSum(...arg)).toBe(exp);
+  });
+});
+
+const isAlienSortedCases = [
+  {
+    arg: [["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz"],
+    exp: true
+  },
+  {
+    arg: [["word", "world", "row"], "worldabcefghijkmnpqstuvxyz"],
+    exp: false
+  },
+  {
+    arg: [["apple", "app"], "abcdefghijklmnopqrstuvwxyz"],
+    exp: false
+  },
+  {
+    arg: [["kuvp", "q"], "ngxlkthsjuoqcpavbfdermiywz"],
+    exp: true
+  }
+];
+
+isAlienSortedCases.forEach(({ arg, exp }) => {
+  test(`${arg.toString()} expect ${exp.toString()}`, () => {
+    expect(isAlienSorted(...arg)).toBe(exp);
   });
 });

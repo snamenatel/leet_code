@@ -1,5 +1,8 @@
 import { largestPerimeter } from "../src/easy/largestPerimeterTriangle";
-import { largetsPerimeterTriangleCases } from "./easy.cases";
-import { toBeTest } from "./helpres";
+import { spiralMatrix } from "../src/easy/spiralMatrix";
+import { largetsPerimeterTriangleCases, spiralMatrixCases } from "./easy.cases";
+import { toBeTest, toStrictEqual } from "./helpres";
 
-toBeTest(largestPerimeter, largetsPerimeterTriangleCases);
+// toBeTest(largestPerimeter, largetsPerimeterTriangleCases);
+
+toStrictEqual(spiralMatrix, spiralMatrixCases);

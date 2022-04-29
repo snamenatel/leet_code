@@ -50,3 +50,18 @@ export const nearestValidPointCases = [
     exp: -1
   }
 ];
+
+export const arraySignCases = [
+  {
+    arg: [[-1, -2, -3, -4, 3, 2, 1]],
+    exp: 1
+  },
+  {
+    arg: [[1, 5, 0, 2, -3]],
+    exp: 0
+  },
+  {
+    arg: [[-1, 1, -1, 1, -1]],
+    exp: -1
+  }
+];

@@ -35,17 +35,13 @@ export const spiralMatrix = function (arr) {
     if (isDX()) {
       if (isStart()) {
         const v = arr.shift();
-        console.log("v1 : ", v);
-
         v && result.push(v);
       } else {
         const v = arr.pop();
-        console.log("v2 : ", v);
         v && result.push(v.reverse());
       }
     } else {
       const v = getFromNested(arr);
-      console.log("v3 : ", v);
       v && result.push(v);
     }
     changeSide();

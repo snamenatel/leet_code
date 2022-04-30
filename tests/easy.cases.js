@@ -65,3 +65,12 @@ export const arraySignCases = [
     exp: -1
   }
 ];
+
+export const canMakeArithmeticProgressionCases = [
+  { arg: [[3, 5, 1]], exp: true },
+  {
+    arg: [[1, 2, 4]],
+    exp: false
+  },
+  { arg: [[-68, -96, -12, -40, 16]], exp: true }
+];

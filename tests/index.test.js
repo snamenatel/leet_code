@@ -1,9 +1,11 @@
 import { arraySign } from "../src/easy/arraySign";
+import { canMakeArithmeticProgression } from "../src/easy/canMakeArithmeticProgression";
 // import { largestPerimeter } from "../src/easy/largestPerimeterTriangle";
 import { nearestValidPoint } from "../src/easy/nearestValidPoint";
 import { spiralMatrix } from "../src/easy/spiralMatrix";
 import {
   arraySignCases,
+  canMakeArithmeticProgressionCases,
   // largetsPerimeterTriangleCases,
   nearestValidPointCases,
   spiralMatrixCases
@@ -16,3 +18,4 @@ toStrictEqual(spiralMatrix, spiralMatrixCases);
 
 toBeTest(nearestValidPoint, nearestValidPointCases);
 toBeTest(arraySign, arraySignCases);
+toBeTest(canMakeArithmeticProgression, canMakeArithmeticProgressionCases);

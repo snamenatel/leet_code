@@ -74,3 +74,18 @@ export const canMakeArithmeticProgressionCases = [
   },
   { arg: [[-68, -96, -12, -40, 16]], exp: true }
 ];
+
+export const isHappyCases = [
+  {
+    arg: [2],
+    exp: false
+  }
+  // {
+  //   arg: [19],
+  //   exp: true
+  // },
+  // {
+  //   arg: [7],
+  //   exp: true
+  // }
+];

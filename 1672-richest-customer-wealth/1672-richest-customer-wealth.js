@@ -5,7 +5,8 @@
 var maximumWealth = function(accounts) {
     let max = 0;
     for(let i=0; i < accounts.length; i++) {
-        if(sum(accounts[i]) > max) max = sum(accounts[i]);
+        let s = sum(accounts[i])
+        if(s > max) max = s;
     }
     return max
 };

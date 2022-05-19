@@ -14,10 +14,7 @@ var matrixReshape = function (mat, r, c) {
   for(let i = 0; i < r; i++) {
     res[i] = [];
     for(let j = 0; j < c; j++) {
-      if(flat[idx] === undefined) {
-        return mat;
-      }
-      res[i][j] = flat[idx];
+            res[i][j] = flat[idx];
       idx++
     }
   }

@@ -14,7 +14,6 @@ var sumOfLeftLeaves = function(root, left = false) {
      if(!root) {
             return 0;
      }
-    console.log(root.val, root.left, root.right)
     let rightSum = sumOfLeftLeaves(root.right);
     let leftSum = sumOfLeftLeaves(root.left, true);
     return (left && !root.right && !root.left ? root.val : 0) + leftSum + rightSum;
